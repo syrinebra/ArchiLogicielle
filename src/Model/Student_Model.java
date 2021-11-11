@@ -8,8 +8,9 @@ public class Student_Model {
 	private int ageStudent;
 	private String mailStudent;
 	private int Filiere;
+	public Groupe_Model grp;
 	
-	public Student_Model(int idStudent,String nomStudent, String prenomStudent,int ageStudent,String mailStudent,int Filiere) {
+	public Student_Model(int idStudent,String nomStudent, String prenomStudent,int ageStudent,String mailStudent,int Filiere, Groupe_Model grp) {
 		
 		this.idStudent = idStudent;
 		this.nomStudent=nomStudent;
@@ -17,6 +18,7 @@ public class Student_Model {
 		this.ageStudent= ageStudent;
 		this.mailStudent = mailStudent;
 		this.Filiere = Filiere;
+		this.grp = grp;
 		
 	}
 	
@@ -60,6 +62,14 @@ public class Student_Model {
 	}
 	public void setFiliere(int Filiere) {
 		this.Filiere = Filiere;
+	}
+	
+	public Groupe_Model getGrp() {
+		return grp;
+	}
+
+	public void setGrp(Groupe_Model grp) {
+		this.grp = grp;
 	}
 
 	
