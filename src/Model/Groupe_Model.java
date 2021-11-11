@@ -2,18 +2,34 @@ package Model;
 
 public class Groupe_Model {
 
+	private int idGroupe;
+	private String nomGroupe;
 	private Student_Model student;
 	private UE_Model ue;
 	private Sujet_Model sujet;
 
 	
-	public Groupe_Model (Student_Model student, UE_Model ue, Sujet_Model sujet) {
-		
+	public Groupe_Model (int idGroupe,String nomGroupe, Student_Model student, UE_Model ue, Sujet_Model sujet) {
+
+		this.idGroupe= idGroupe;
+		this.nomGroupe= nomGroupe;
 		this.student=student;
 		this.ue=ue;
 		this.sujet=sujet;
 
 }
+	public int getIdGroupe() {
+		return idGroupe;
+	}
+	public void setIdGroupe(int idGroupe) {
+		this.idGroupe = idGroupe;
+	}
+	public String getNomGroupe() {
+		return nomGroupe;
+	}
+	public void setNomGroupe(String nomGroupe) {
+		this.nomGroupe = nomGroupe;
+	}
 	public Student_Model getStudent() {
 		return student;
 	}
